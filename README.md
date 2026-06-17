@@ -1,18 +1,37 @@
-## Getting Started
+# Práctica: Arbol Binario
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Datos del Estudiante
+- **Nombre:** Xavier Alexander Aucay Villa
+- **Curso:** Grupo 3
+- **Fecha:** 16/6/2026
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 1. icc-et-u2-EstructurasNoLineales
+![alt text](<assets/Captura de pantalla 2026-06-17 161729.png>)
+![alt text](<assets/Captura de pantalla 2026-06-17 161905.png>)
+![alt text](<assets/Captura de pantalla 2026-06-17 161937.png>)
+![alt text](<assets/Captura de pantalla 2026-06-17 162001.png>)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+**Fecha:** 16/6/2026
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+**Descripción:** Se trabajó con un árbol binario de enteros usando las clases App, IntTree y Node, para comprender cómo se insertan y organizan los valores en la estructura.
+---
 
-## Dependency Management
+## 2. icc-est-u4-complejidad
+![alt text](<assets/Captura de pantalla 2026-06-17 162226.png>)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+**Fecha:** 14/03/26
+
+**Descripción:** En la segunda práctica se amplió el ejercicio creando un árbol binario genérico con objetos Person, lo que permitió manejar datos más complejos y actualizar la clase App con nuevos nombres y ejemplos, .
+
+---
+
+## 3. icc-est-u4-complejidad
+![Aplicación desplegada](assets/02-captura-demo.png)
+**Fecha:** 15/03/26
+
+**Descripción:** Ejemplos de bucles listados
+
+---
