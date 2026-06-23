@@ -2,18 +2,22 @@
 import models.Person;
 //import structures.node.Node;
 import structures.trees.BinaryTree;
+import structures.trees.Ejercicio1;
+import structures.trees.Ejercicio2;
 import structures.trees.IntTree;
 public class App {
     public static void main(String[] args) throws Exception {
         runIntTree();
         runPersonTree();
+        runEjercicios();
+        runEjercicio2(); 
     }
     private static void runPersonTree(){
         BinaryTree<Person> personTree = new BinaryTree<>();
         personTree.insert(new Person("Alice", 30));
         personTree.insert(new Person("Bob", 25));
         personTree.insert(new Person("Diego", 35));
-        personTree.insert(new Person("Rafael", 35));
+        personTree.insert(new Person("Rafael", 35));    
         personTree.insert(new Person("Ana", 35));
 
         //personTree.inOrder();
@@ -71,6 +75,22 @@ public class App {
         System.out.println("Peso");
         System.out.println(arbolNumeros.getPeso());
         //System.out.println(arbolNumeros.peso());
+        
 
     }
+    private static void runEjercicios() {
+        Ejercicio1 ejercicio = new Ejercicio1();
+        //int[] numeros = {4, 7, 2, 9, 6, 3, 1};
+        //ejercicio.insert(numeros);
+}
+    private static void runEjercicio2() {
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        BinaryTree<Integer> tree = new BinaryTree<>();
+        int[] datos = {4, 7, 2, 9, 6, 3, 1};
+        for (int n : datos) {
+            tree.insert(n);
+        }
+        ejercicio2.invert(tree.getRoot());
+    }
+
 }

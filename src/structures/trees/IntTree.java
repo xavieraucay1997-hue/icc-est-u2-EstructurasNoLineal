@@ -107,8 +107,6 @@ public class IntTree {
         queue.offer(root);
 
         while (!queue.isEmpty()) {
-        //    int levelSize = queue.size();
-      //      for(int i = 0; i < levelSize; i++)
             Node<Integer> actual = queue.poll();
             System.out.print(actual + " ");
 
