@@ -80,8 +80,8 @@ public class App {
     }
     private static void runEjercicios() {
         Ejercicio1 ejercicio = new Ejercicio1();
-        //int[] numeros = {4, 7, 2, 9, 6, 3, 1};
-        //ejercicio.insert(numeros);
+        int[] numeros = {4, 7, 2, 9, 6, 3, 1};
+        ejercicio.insert(numeros);
 }
     private static void runEjercicio2() {
         Ejercicio2 ejercicio2 = new Ejercicio2();

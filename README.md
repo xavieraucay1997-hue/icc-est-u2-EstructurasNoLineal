@@ -8,9 +8,15 @@
 ---
 
 ## 1. icc-et-u2-EstructurasNoLineales
-![alt text](<assets/Captura de pantalla 2026-06-17 161729.png>)
+
+## PreOrder
+![Pre order](<assets/Captura de pantalla 2026-06-17 161729.png>)
+
+## InOder
 ![alt text](<assets/Captura de pantalla 2026-06-17 161905.png>)
+## Por niveles 
 ![alt text](<assets/Captura de pantalla 2026-06-17 161937.png>)
+## Altura
 ![alt text](<assets/Captura de pantalla 2026-06-17 162001.png>)
 
 
@@ -29,9 +35,22 @@
 ---
 
 ## 3. icc-est-u4-complejidad
-![Aplicación desplegada](assets/02-captura-demo.png)
-**Fecha:** 15/03/26
+**Fecha:** 22/6/2026
 
-**Descripción:** Ejemplos de bucles listados
+**Descripción:** Se crearon dos clases (Ejercicio 1 y ejercicio 2) creamos un arbol binario
+Recorrimos el arbol con posOrder, y lo imprimí usando espacios 
+
+![alt text](<assets/Captura de pantalla 2026-06-22 194843.png>)
+![alt text](<assets/Captura de pantalla 2026-06-22 195738.png>)
+
+
+### Salidas de consola
+## Parte 1 
+ ![alt text](<assets/Captura de pantalla 2026-06-22 195907.png>)
+
+## Parte 2 22/6/2026
+
+![alt text](<assets/Captura de pantalla 2026-06-22 200033.png>)
+
 
 ---
