@@ -1,10 +1,13 @@
 
 import java.util.List;
+import java.util.Set;
 
+import Collections.set.Sets;
 import Ejercicio_01_insert.Ejercicio1;
 import Ejercicio_02_invert.Ejercicio2;
 import Ejercicio_03_listLevels.ListLevels;
 import Ejercicio_04_depth.Depth;
+import models.Contacto;
 import models.Person;
 import structures.node.Node;
 //import structures.node.Node;
@@ -12,12 +15,13 @@ import structures.trees.BinaryTree;
 import structures.trees.IntTree;
 public class App {
     public static void main(String[] args) throws Exception {
-        runIntTree();
-        runPersonTree();
-        runEjercicios();
-        runEjercicio2();
-        runEjercicio3(); 
-        runEjercicio4();
+        //runIntTree();
+        //runPersonTree();
+        //runEjercicios();
+        //runEjercicio2();
+        //runEjercicio3(); 
+        ///runEjercicio4();
+        runSets();
     }
     private static void runPersonTree(){
         BinaryTree<Person> personTree = new BinaryTree<>();
@@ -91,6 +95,7 @@ public class App {
         ejercicio.insertBSTTest(numeros);
 }
     private static void runEjercicio2() {
+
         Ejercicio2 ejercicio2 = new Ejercicio2();
         BinaryTree<Integer> tree = new BinaryTree<>();
         int[] datos = {4, 7, 2, 9, 6, 3, 1};
@@ -128,6 +133,44 @@ public class App {
         int resultado = depth.maxDepth(tree.getRoot());
 
         System.out.println("Profundidad maxima: " + resultado);
+    }
+
+    private static void runSets(){
+        Sets sets = new Sets(); 
+
+        //Primera implementacion Hash set 
+        System.out.println("HashSet");
+        Set<String> hashSet = sets.construirHashSet();
+        System.out.println(hashSet);
+        System.out.println("Tamaño: " + hashSet.size());
+        System.out.println(hashSet.contains("F"));
+
+        System.out.println();
+        System.out.println("LinkedHashSet");
+        Set<String> lhSet = sets.construirLinkedHashSet();
+        System.out.println(lhSet);
+        System.out.println("Tamaño " + lhSet.size());
+        System.out.println(lhSet.contains("F"));
+
+        System.out.println();
+        System.out.println("TreeSet");
+        Set<String> treeSet = sets.construirTreeSet();
+        System.out.println(treeSet);
+        System.out.println("Tamaño " + treeSet.size());
+        System.out.println(treeSet.contains("F"));
+
+        System.out.println();
+        System.out.println("Comparador");
+        Set<Contacto> tCSet = sets.construirTreeSetConComparador();
+        System.out.println (tCSet);
+        System.out.println("Tamaño " + tCSet.size());
+
+        System.out.println();
+        System.out.println("HashSetContacto");
+        Set<Contacto> hCSet = sets.construirHashSetContacto();
+        System.out.println (hCSet);
+        System.out.println("Tamaño " + hCSet.size());
+
     }
   
 }
