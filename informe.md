@@ -82,7 +82,7 @@ Llame al metodo printTree para imprimir el como se ve el arbol en la consola.
 
 En este ejercicio implemente un metodo para que muestre de forma invertida el arbol binario. Si el nodo actual es null el metodo termina.
 Por otra parte primero imprimo el arbol original, despues llamo a un metodo auxiliar invertRecursively el que utiliza una variable temp para que intercambie hijos izquierdos y derechos de cada nodo en forma recursiva.
-Despues vuelvo a llamar a printTree para mostrar como quedo el arbol ahora invertido. 
+Despues vuelvo a llamar a printTree para mostrar como quedo el arbol ahora invertido.  
 
 
 
@@ -145,10 +145,9 @@ public class ListLevels {
 }
 
 
-En este ejercicio implemente un metodo que agrupe los nodos de un arbol por niveles, recorre el arbol y si el arbol esta vacio es null, el metodo termina y devuelve una lista vacia. 
-Utilizo colas para que el orden de visita sea controlado y empiezo la raiz en la cola, eso mientras la cola no este vacia mido los elementos usando queue.size().
+En este ejercicio implemente un metodo que agrupe los nodos de un arbol por niveles, recorre el arbol y si el arbol esta vacio es null, el metodo termina y devuelve una lista vacia. Utilizo colas para que el orden de visita sea controlado y empiezo la raiz en la cola, eso mientras la cola no este vacia mido los elementos usando queue.size().
 Despues un bucle for para sacar los nodos y guardarlos en una lista level y agrego a la cola a sus hijps izquierdo y derecho. Al terminar guardo la sublista en el resultado final. 
-Para la impresion el metodo printLevels recorre la lista para mostrar los nodos.
+Para la impresión el metodo printLevels recorre la lista para mostrar los nodos.
 
 ## Ejercicio 4
 
@@ -173,7 +172,7 @@ public class Depth {
 
 En este ejercicio implemente un metodo para calcular la profundidad maxima del arbol, funciona de manera recursiva de abajo hacia arriba. 
 Si el nodo es null eso significa que llego al final de la rama por lo que el metodo devuelve 0. Seguido el metodo se divide para calcular por separado la profundidad de la rama izquierda y la derecha, cada una baja recursivamente hasta null. 
-Cuando las respuestas suben el metodo usa math.max(left, right) para comparar las ramas y quedarse con la mas larga, al resultado se le suma 1 para contar el nivel del nodo en el que esta. 
+Cuando las respuestas suben el metodo usa math.max(left, right) para comparar las ramas y quedarse con la mas larga, al resultado se le suma 1 para contar el nivel del nodo en el que está. 
 
 
 

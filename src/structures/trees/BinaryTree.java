@@ -9,6 +9,7 @@ public class BinaryTree<T extends Comparable<T>> {
     private Node<T> root;
     private int peso;
 
+    
     /// Constructor SIEMPRE inicializa LAS VARIABLES (ROOT)
     public BinaryTree() {
         this.root = null;

@@ -15,6 +15,7 @@ public class ListLevels {
         if (root == null) {
             return result;
         }
+        
         Queue<Node<Integer>> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {

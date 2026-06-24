@@ -21,7 +21,6 @@ public class Ejercicio1 {
     public void printTree(Node<Integer> root) {
         printTreeRecursivo(root, 0);
     }
-
     private void printTreeRecursivo(Node<Integer> actual, int nivel) {
         if (actual == null){
             return;

@@ -100,6 +100,7 @@ public class App {
         ejercicio2.invertBinaryTree(tree.getRoot());
     }
 
+    
     private static void runEjercicio3() {
         BinaryTree<Integer> tree = new BinaryTree<>();
         int[] datos = {4, 2, 7, 1, 3, 6, 9};
