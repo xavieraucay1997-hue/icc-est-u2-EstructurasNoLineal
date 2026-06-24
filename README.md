@@ -13,14 +13,14 @@
 ![Pre order](<assets/Captura de pantalla 2026-06-17 161729.png>)
 
 ## InOder
-![alt text](<assets/Captura de pantalla 2026-06-17 161905.png>)
+![in order](<assets/Captura de pantalla 2026-06-17 161905.png>)
 ## Por niveles 
-![alt text](<assets/Captura de pantalla 2026-06-17 161937.png>)
+![por niveles](<assets/Captura de pantalla 2026-06-17 161937.png>)
 ## Altura
-![alt text](<assets/Captura de pantalla 2026-06-17 162001.png>)
+![altura](<assets/Captura de pantalla 2026-06-17 162001.png>)
 
 ## Salida de consola 
- ![alt text](<assets/Captura de pantalla 2026-06-22 195907.png>)
+ ![salida](<assets/Captura de pantalla 2026-06-22 195907.png>)
 
 
 **Fecha:** 16/6/2026
@@ -64,11 +64,11 @@ Recorrimos el arbol con posOrder, y lo imprimí usando espacios
 Este ejercicio recorre el arbol por niveles utilizando una cola, agrupa los nodos segun su nivel de profundidad y almacena en listas, luego se imprimen.
 
 ### Metodo 
-![alt text](<assets/Captura de pantalla 2026-06-23 215812.png>)
+![metodo](<assets/Captura de pantalla 2026-06-23 215812.png>)
 
 ## Salida 
 
-![alt text](<assets/Captura de pantalla 2026-06-23 220011.png>)
+![salida](<assets/Captura de pantalla 2026-06-23 220011.png>)
 
 ## Ejercicio 4
 
@@ -76,13 +76,11 @@ Este ejercicio calcula el numero de nodos que existe en el camino mas largo desd
 
 ### Metodo 
 
-![alt text](<assets/Captura de pantalla 2026-06-23 220344.png>)
+![metodo](<assets/Captura de pantalla 2026-06-23 220344.png>)
 
 ## Salida
 
-![alt text](<assets/Captura de pantalla 2026-06-23 220401.png>)
-
-
+![salida](<assets/Captura de pantalla 2026-06-23 220401.png>)
 
 
 
