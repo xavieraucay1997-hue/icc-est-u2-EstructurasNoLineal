@@ -1,9 +1,9 @@
-package structures.trees;
+package Ejercicio_02_invert;
 
 import structures.node.Node;
 
 public class Ejercicio2 {
-    public Node<Integer> invert(Node<Integer> root){
+    public Node<Integer> invertBinaryTree(Node<Integer> root){
         if (root == null){
             return null;
         } 

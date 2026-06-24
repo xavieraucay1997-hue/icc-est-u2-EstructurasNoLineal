@@ -19,6 +19,9 @@
 ## Altura
 ![alt text](<assets/Captura de pantalla 2026-06-17 162001.png>)
 
+## Salida de consola 
+ ![alt text](<assets/Captura de pantalla 2026-06-22 195907.png>)
+
 
 **Fecha:** 16/6/2026
 
@@ -40,17 +43,48 @@
 **Descripción:** Se crearon dos clases (Ejercicio 1 y ejercicio 2) creamos un arbol binario
 Recorrimos el arbol con posOrder, y lo imprimí usando espacios 
 
-![alt text](<assets/Captura de pantalla 2026-06-22 194843.png>)
+## Ejercicio 1
+![alt text](<assets/Captura de pantalla 2026-06-23 195703.png>)
+## Ejercicio 2
 ![alt text](<assets/Captura de pantalla 2026-06-22 195738.png>)
 
 
-### Salidas de consola
-## Parte 1 
- ![alt text](<assets/Captura de pantalla 2026-06-22 195907.png>)
-
-## Parte 2 22/6/2026
-
-![alt text](<assets/Captura de pantalla 2026-06-22 200033.png>)
+### Salida de consola
+![alt text](<assets/Captura de pantalla 2026-06-23 195429.png>)
 
 
 ---
+## 4. icc-est-u4-complejidad
+
+**Fecha:** 23/6/2026
+
+**Descripción:** 
+## Ejercicio 3 
+
+Este ejercicio recorre el arbol por niveles utilizando una cola, agrupa los nodos segun su nivel de profundidad y almacena en listas, luego se imprimen.
+
+### Metodo 
+![alt text](<assets/Captura de pantalla 2026-06-23 215812.png>)
+
+## Salida 
+
+![alt text](<assets/Captura de pantalla 2026-06-23 220011.png>)
+
+## Ejercicio 4
+
+Este ejercicio calcula el numero de nodos que existe en el camino mas largo desde la raiz hasta una hoja. Se resuelve normalemnte con recursion. 
+
+### Metodo 
+
+![alt text](<assets/Captura de pantalla 2026-06-23 220344.png>)
+
+## Salida
+
+![alt text](<assets/Captura de pantalla 2026-06-23 220401.png>)
+
+
+
+
+
+---
+

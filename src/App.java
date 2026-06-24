@@ -1,16 +1,23 @@
 
+import java.util.List;
+
+import Ejercicio_01_insert.Ejercicio1;
+import Ejercicio_02_invert.Ejercicio2;
+import Ejercicio_03_listLevels.ListLevels;
+import Ejercicio_04_depth.Depth;
 import models.Person;
+import structures.node.Node;
 //import structures.node.Node;
 import structures.trees.BinaryTree;
-import structures.trees.Ejercicio1;
-import structures.trees.Ejercicio2;
 import structures.trees.IntTree;
 public class App {
     public static void main(String[] args) throws Exception {
         runIntTree();
         runPersonTree();
         runEjercicios();
-        runEjercicio2(); 
+        runEjercicio2();
+        runEjercicio3(); 
+        runEjercicio4();
     }
     private static void runPersonTree(){
         BinaryTree<Person> personTree = new BinaryTree<>();
@@ -81,7 +88,7 @@ public class App {
     private static void runEjercicios() {
         Ejercicio1 ejercicio = new Ejercicio1();
         int[] numeros = {4, 7, 2, 9, 6, 3, 1};
-        ejercicio.insert(numeros);
+        ejercicio.insertBSTTest(numeros);
 }
     private static void runEjercicio2() {
         Ejercicio2 ejercicio2 = new Ejercicio2();
@@ -90,7 +97,36 @@ public class App {
         for (int n : datos) {
             tree.insert(n);
         }
-        ejercicio2.invert(tree.getRoot());
+        ejercicio2.invertBinaryTree(tree.getRoot());
     }
 
+    private static void runEjercicio3() {
+        BinaryTree<Integer> tree = new BinaryTree<>();
+        int[] datos = {4, 2, 7, 1, 3, 6, 9};
+        for (int n : datos) {
+            tree.insert(n);
+        }
+
+        ListLevels listador = new ListLevels();
+        List<List<Node<Integer>>> niveles = listador.listLevels(tree.getRoot());
+        listador.printLevels(niveles);
+    
+    }
+    private static void runEjercicio4() {
+
+        BinaryTree<Integer> tree = new BinaryTree<>();
+
+        int[] datos = {4, 2, 7, 1, 3, 8};
+
+        for (int n : datos) {
+            tree.insert(n);
+        }
+
+        Depth depth = new Depth();
+
+        int resultado = depth.maxDepth(tree.getRoot());
+
+        System.out.println("Profundidad maxima: " + resultado);
+    }
+  
 }
