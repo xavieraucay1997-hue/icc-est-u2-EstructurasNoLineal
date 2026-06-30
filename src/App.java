@@ -2,6 +2,7 @@
 import java.util.List;
 import java.util.Set;
 
+import Collections.maps.Maps;
 import Collections.set.Sets;
 import Ejercicio_01_insert.Ejercicio1;
 import Ejercicio_02_invert.Ejercicio2;
@@ -21,7 +22,8 @@ public class App {
         //runEjercicio2();
         //runEjercicio3(); 
         ///runEjercicio4();
-        runSets();
+        //runSets();
+        runMaps();
     }
     private static void runPersonTree(){
         BinaryTree<Person> personTree = new BinaryTree<>();
@@ -170,6 +172,16 @@ public class App {
         Set<Contacto> hCSet = sets.construirHashSetContacto();
         System.out.println (hCSet);
         System.out.println("Tamaño " + hCSet.size());
+ 
+    }
+   
+    private static void runMaps(){
+        Maps maps = new Maps(); 
+        maps.construirHashMap(); 
+        //maps.coLinkedHashMap();
+        //maps.cTreeMap();
+
+
 
     }
   
