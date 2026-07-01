@@ -1,5 +1,6 @@
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import Collections.maps.Maps;
@@ -10,6 +11,7 @@ import Ejercicio_03_listLevels.ListLevels;
 import Ejercicio_04_depth.Depth;
 import models.Contacto;
 import models.Person;
+import structures.graphs.Graph;
 import structures.node.Node;
 //import structures.node.Node;
 import structures.trees.BinaryTree;
@@ -23,7 +25,8 @@ public class App {
         //runEjercicio3(); 
         ///runEjercicio4();
         //runSets();
-        runMaps();
+        //runMaps();
+        runGraph();
     }
     private static void runPersonTree(){
         BinaryTree<Person> personTree = new BinaryTree<>();
@@ -184,5 +187,27 @@ public class App {
 
 
     }
+
+    private static void runGraph(){
+        Graph<String> graph = new Graph<>();
+        graph.add("A");
+        graph.add("B");
+        graph.add("C");
+        graph.add("D");
+        graph.add("J");
+
+        graph.addEdge("J", "D");
+        graph.addEdge("C", "D");
+        graph.addEdge("A", "B");
+        graph.addEdge("B", "C");
+        graph.addEdge("B", "D");
+        graph.addEdge("C", "A");
+
+        graph.printGraph();
+    
+
+    }
+
+    
   
 }

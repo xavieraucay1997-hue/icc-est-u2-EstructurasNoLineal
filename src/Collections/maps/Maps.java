@@ -3,6 +3,7 @@ package Collections.maps;
 import java.security.KeyStore.Entry;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -97,9 +98,12 @@ public class Maps {
     }
     public void eliminarDuplicadosAndSort(List<Contacto> contacto){
         Set<Contacto> tSet = new TreeSet<>(); 
-        for(Contacto contacto : contactos){
-            tSet.add(contacto);
+        for(Contacto contactos : contacto){
+            tSet.add(contactos);
         }
+    
+
     }
+
     
 }
