@@ -35,7 +35,7 @@ public class Graph <T>{
 
     }
 
-    public void addEdgeUnidireccion(T v1, T v2){
+    public void addEdgeUni(T v1, T v2){
         Node<T> nv1 = new Node<T>(v1);
         Node<T> nv2 = new Node <T>(v2);
         add(v1);
@@ -48,10 +48,16 @@ public class Graph <T>{
         for (Map.Entry<Node<T>, Set<Node<T>>> entry : graph.entrySet()){
             System.out.print(entry.getKey() + " -> ");
             for(Node<T> coneccion : entry.getValue()){
-                System.out.print(coneccion + " "); 
+                System.out.print(coneccion); 
             }
             System.out.println();
         }
     }
+
+    public Set<Node<T>> getVecinos(T current) { 
+        return graph.getOrDefault(new Node<T>(current), new HashSet<Node<T>>());
+        
+
+    } 
     
 }

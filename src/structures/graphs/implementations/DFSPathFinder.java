@@ -1,9 +1,5 @@
 package structures.graphs.implementations;
-
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 import structures.graphs.Graph;
@@ -20,8 +16,8 @@ public class DFSPathFinder<T> implements PathFinder<T> {
       //A=>F  A=>J A=>K
        
         //List<Node<T>> visited = new ArrayList<>();
-        Set<Node<T>> visited = new LinkedHashSet<>();
-        Set<Node<T>> path = new LinkedHashSet<>();
+        Set<T> visited = new LinkedHashSet<>();
+        Set<T> path = new LinkedHashSet<>();
 
         boolean encontrado = dfs(graph, start, end, visited, path);
         if(!encontrado){
@@ -52,7 +48,7 @@ public class DFSPathFinder<T> implements PathFinder<T> {
             }
         }
 
-        path.remove(path.size() - 1);
+        path.remove(current);
         return false; 
 
         

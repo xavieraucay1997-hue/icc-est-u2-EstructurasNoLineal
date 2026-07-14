@@ -12,6 +12,9 @@ import Ejercicio_04_depth.Depth;
 import models.Contacto;
 import models.Person;
 import structures.graphs.Graph;
+import structures.graphs.PathResult;
+import structures.graphs.implementations.BFSPathFinder;
+import structures.graphs.implementations.DFSPathFinder;
 import structures.node.Node;
 //import structures.node.Node;
 import structures.trees.BinaryTree;
@@ -26,7 +29,8 @@ public class App {
         ///runEjercicio4();
         //runSets();
         //runMaps();
-        runGraph();
+        //runGraph();
+        runBFSPathFinder();
     }
     private static void runPersonTree(){
         BinaryTree<Person> personTree = new BinaryTree<>();
@@ -94,11 +98,13 @@ public class App {
         
 
     }
+ 
     private static void runEjercicios() {
         Ejercicio1 ejercicio = new Ejercicio1();
         int[] numeros = {4, 7, 2, 9, 6, 3, 1};
         ejercicio.insertBSTTest(numeros);
 }
+
     private static void runEjercicio2() {
 
         Ejercicio2 ejercicio2 = new Ejercicio2();
@@ -109,8 +115,7 @@ public class App {
         }
         ejercicio2.invertBinaryTree(tree.getRoot());
     }
-
-    
+  
     private static void runEjercicio3() {
         BinaryTree<Integer> tree = new BinaryTree<>();
         int[] datos = {4, 2, 7, 1, 3, 6, 9};
@@ -123,6 +128,7 @@ public class App {
         listador.printLevels(niveles);
     
     }
+ 
     private static void runEjercicio4() {
 
         BinaryTree<Integer> tree = new BinaryTree<>();
@@ -206,6 +212,46 @@ public class App {
         graph.printGraph();
     
 
+    }
+
+    public static void runGraph2(){
+        Graph<String> g = new Graph<>();
+        g.addEdge("A", "B");
+        g.addEdge("A", "C");
+        g.addEdge("B", "D");
+        g.addEdge("C", "J");
+        g.addEdge("D", "E");
+        g.addEdge("E", "F");
+        g.addEdge("K", "J");
+        
+        DFSPathFinder<String> dfs = new DFSPathFinder();
+        PathResult<String> result = dfs.find(g, "A", "F");
+        PathResult<String> result2 = dfs.find(g, "A", "J");
+        PathResult<String> result3 = dfs.find(g, "A", "K");
+
+
+    }
+
+    public static void runBFSPathFinder() {
+        Graph<String> g = new Graph<>();
+
+        g.addEdge("A", "B");
+        g.addEdge("A", "C");
+        g.addEdge("B", "D");
+        g.addEdge("C", "J");
+        g.addEdge("D", "E");
+        g.addEdge("E", "F");
+        g.addEdge("K", "J");
+
+        BFSPathFinder<String> bfs = new BFSPathFinder<>();
+
+        PathResult<String> result = bfs.find(g, "A", "F");
+        PathResult<String> result2 = bfs.find(g, "A", "J");
+        PathResult<String> result3 = bfs.find(g, "A", "K");
+
+        System.out.println(result);
+        System.out.println(result2);
+        System.out.println(result3);
     }
 
     

@@ -14,9 +14,6 @@ public class PathResult<T>{
         this.visitados = visitados;
         this.path = path;
     }
-    
-
-
 
     public Set<T> getVisitados() {
         return visitados;
